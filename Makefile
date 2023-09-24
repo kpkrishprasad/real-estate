@@ -1,4 +1,5 @@
 SHELL=bash
+.PHONY: client
 
 run:
 	source venv/bin/activate; \
@@ -26,3 +27,6 @@ make-admin:
 	source venv/bin/activate; \
 		python manage.py createsuperuser
 
+client:
+	@source venv/bin/activate; \
+		python3 client/client.py
