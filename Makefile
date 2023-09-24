@@ -22,5 +22,7 @@ freeze:
 	source venv/bin/activate; \
 		pip freeze > requirements.txt
 
-
+make-admin:
+	source venv/bin/activate; \
+		python manage.py createsuperuser
 
